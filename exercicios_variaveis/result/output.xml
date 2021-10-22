@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.0 on win32)" generated="20211020 21:56:34.680" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests">
+<suite id="s1-s1" name="Exercicio Variavel" source="C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests\exercicio_variavel.robot">
+<test id="s1-s1-t1" name="Imprimir dicionario em linhas separadas">
+<kw name="receba dicionario para impressao" library="resource">
+<msg timestamp="20211020 21:56:34.762" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nImprimindo o dicionario pessoa: \n${Pessoa}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.763" level="TRACE">Arguments: [ '\nImprimindo o dicionario pessoa: \n{\'nome\': "\'Rauni\'", \'sobrenome\': "\'Fabricio\'", \'idade\': "\'31\'", \'sexo\': "\'Masculino\'", \'cidade\': "\'Itu\'", \'cep\': \'13300000\'}\n' ]</msg>
+<msg timestamp="20211020 21:56:34.764" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.762" endtime="20211020 21:56:34.764"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>pegando o nome: ${Pessoa.nome}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.765" level="TRACE">Arguments: [ "pegando o nome: 'Rauni'\n" ]</msg>
+<msg timestamp="20211020 21:56:34.765" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.764" endtime="20211020 21:56:34.766"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>pegando o sobrenome: ${Pessoa.sobrenome}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.767" level="TRACE">Arguments: [ "pegando o sobrenome: 'Fabricio'\n" ]</msg>
+<msg timestamp="20211020 21:56:34.768" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.766" endtime="20211020 21:56:34.768"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>pegando a idade: ${Pessoa.idade}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.770" level="TRACE">Arguments: [ "pegando a idade: '31'\n" ]</msg>
+<msg timestamp="20211020 21:56:34.771" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.768" endtime="20211020 21:56:34.771"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>pegando a cidade: ${Pessoa.cidade}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.772" level="TRACE">Arguments: [ "pegando a cidade: 'Itu'\n" ]</msg>
+<msg timestamp="20211020 21:56:34.773" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.771" endtime="20211020 21:56:34.773"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>pegando o cep: ${Pessoa.cep}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.774" level="TRACE">Arguments: [ 'pegando o cep: 13300000\n' ]</msg>
+<msg timestamp="20211020 21:56:34.776" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.773" endtime="20211020 21:56:34.777"/>
+</kw>
+<msg timestamp="20211020 21:56:34.777" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.762" endtime="20211020 21:56:34.777"/>
+</kw>
+<doc>ele deve receber uma variavel do tipo dicionario e imprimir os seus valores linha a linha</doc>
+<tag>Test_dicionarios</tag>
+<tag>variaveis_suite</tag>
+<status status="PASS" starttime="20211020 21:56:34.760" endtime="20211020 21:56:34.777"/>
+</test>
+<test id="s1-s1-t2" name="Imprimir Lista de Frutas">
+<kw name="receba a lista de frutas para impressao" library="resource">
+<msg timestamp="20211020 21:56:34.781" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nRecebendo a lista de frutas: \n${Lista_frutas}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.781" level="TRACE">Arguments: [ "\nRecebendo a lista de frutas: \n['mamao', 'banana', 'abacaxi', 'morango', 'laranja']\n" ]</msg>
+<msg timestamp="20211020 21:56:34.782" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.781" endtime="20211020 21:56:34.782"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Primeira fruta: ${Lista_frutas[0]}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.783" level="TRACE">Arguments: [ 'Primeira fruta: mamao\n' ]</msg>
+<msg timestamp="20211020 21:56:34.784" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.782" endtime="20211020 21:56:34.784"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Segunda fruta: ${Lista_frutas[1]}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.786" level="TRACE">Arguments: [ 'Segunda fruta: banana\n' ]</msg>
+<msg timestamp="20211020 21:56:34.788" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.784" endtime="20211020 21:56:34.788"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Terceira fruta: ${Lista_frutas[2]}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.789" level="TRACE">Arguments: [ 'Terceira fruta: abacaxi\n' ]</msg>
+<msg timestamp="20211020 21:56:34.790" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.788" endtime="20211020 21:56:34.790"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Quarta fruta: ${Lista_frutas[3]}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.792" level="TRACE">Arguments: [ 'Quarta fruta: morango\n' ]</msg>
+<msg timestamp="20211020 21:56:34.793" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.790" endtime="20211020 21:56:34.793"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Quinta fruta: ${Lista_frutas[4]}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 21:56:34.795" level="TRACE">Arguments: [ 'Quinta fruta: laranja\n' ]</msg>
+<msg timestamp="20211020 21:56:34.796" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.794" endtime="20211020 21:56:34.796"/>
+</kw>
+<msg timestamp="20211020 21:56:34.796" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 21:56:34.780" endtime="20211020 21:56:34.796"/>
+</kw>
+<doc>deve imprimir uma lista de frutas linha a linha</doc>
+<tag>Test_frutas</tag>
+<tag>variaveis_suite</tag>
+<status status="PASS" starttime="20211020 21:56:34.780" endtime="20211020 21:56:34.797"/>
+</test>
+<status status="PASS" starttime="20211020 21:56:34.734" endtime="20211020 21:56:34.799"/>
+</suite>
+<status status="PASS" starttime="20211020 21:56:34.684" endtime="20211020 21:56:34.804"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_dicionarios</stat>
+<stat pass="1" fail="0" skip="0">Test_frutas</stat>
+<stat pass="2" fail="0" skip="0">variaveis_suite</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Exercicio Variavel">Tests.Exercicio Variavel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211020 21:56:34.644" level="ERROR">Error in file 'C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests\exercicio_argumentos.robot' on line 1: Unrecognized section header '***'. Valid sections: 'Settings', 'Variables', 'Test Cases', 'Tasks', 'Keywords' and 'Comments'.</msg>
+<msg timestamp="20211020 21:56:34.648" level="ERROR">Error in file 'C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests\exercicio_for.robot' on line 1: Unrecognized section header '***'. Valid sections: 'Settings', 'Variables', 'Test Cases', 'Tasks', 'Keywords' and 'Comments'.</msg>
+<msg timestamp="20211020 21:56:34.652" level="ERROR">Error in file 'C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests\exercicio_forif.robot' on line 1: Unrecognized section header '***'. Valid sections: 'Settings', 'Variables', 'Test Cases', 'Tasks', 'Keywords' and 'Comments'.</msg>
+</errors>
+</robot>

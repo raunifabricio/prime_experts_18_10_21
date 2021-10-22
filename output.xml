@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.0 on win32)" generated="20211021 19:42:54.557" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests">
+<suite id="s1-s1" name="Exercicio For" source="C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests\exercicio_for.robot">
+<test id="s1-s1-t1" name="percorrer itens de uma lista">
+<kw name="mostrando os paises" library="resource">
+<arg>@{PAISES}</arg>
+<doc>perconrrendo uma lista de paises</doc>
+<kw name="FOR ${pais} IN @{List_paises}">
+<msg timestamp="20211021 19:42:54.636" level="FAIL">No keyword with name 'FOR ${pais} IN @{List_paises}' found.</msg>
+<status status="FAIL" starttime="20211021 19:42:54.636" endtime="20211021 19:42:54.636"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nPais: ${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211021 19:42:54.637" endtime="20211021 19:42:54.637"/>
+</kw>
+<kw name="End" library="Reserved">
+<status status="NOT RUN" starttime="20211021 19:42:54.637" endtime="20211021 19:42:54.637"/>
+</kw>
+<status status="FAIL" starttime="20211021 19:42:54.633" endtime="20211021 19:42:54.638"/>
+</kw>
+<doc>imprimir lista de paises um por um</doc>
+<tag>imprimir_paises</tag>
+<status status="FAIL" starttime="20211021 19:42:54.632" endtime="20211021 19:42:54.639">No keyword with name 'FOR ${pais} IN @{List_paises}' found.</status>
+</test>
+<status status="FAIL" starttime="20211021 19:42:54.604" endtime="20211021 19:42:54.642"/>
+</suite>
+<status status="FAIL" starttime="20211021 19:42:54.560" endtime="20211021 19:42:54.644"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">imprimir_paises</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Exercicio For">Tests.Exercicio For</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211021 19:42:54.530" level="ERROR">Error in file 'C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests\exercicio_forif.robot' on line 1: Unrecognized section header '***'. Valid sections: 'Settings', 'Variables', 'Test Cases', 'Tasks', 'Keywords' and 'Comments'.</msg>
+</errors>
+</robot>
