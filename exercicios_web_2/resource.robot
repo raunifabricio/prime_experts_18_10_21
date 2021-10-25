@@ -6,7 +6,8 @@ Library         SeleniumLibrary
 ${URL}                   http://automationpractice.com
 ${campo_busca}           //input[@id="search_query_top"]
 ${botao_buscar}          //button[@name="submit_search"]
-${resultado_busca}      //a[@class="product-name" and @title="Blouse"]
+${resultado_busca}       //a[@class="product-listing" and @title="No results were found for your search "itemNãoExistente""]
+
 
 ***Keywords***
 Abrir o navegador
@@ -15,7 +16,7 @@ Abrir o navegador
 Fechar o navegador
     Close Browser 
 
-Acessar a pagina home do site Automation Practice
+Acessar a página home do site Automation Practice
     Go to       ${URL}
 
 Digitar o nome do produto ${produto} no campo de pesquisa
@@ -23,9 +24,9 @@ Digitar o nome do produto ${produto} no campo de pesquisa
     Input text      ${campo_busca}      ${produto}
 
 Clicar no botão pesquisar
-    SeleniumLibrary.Click Button        ${botao_buscar}
+    Click Button        ${botao_buscar}
 
-Conferir se o produto "Blouse" foi listado no site
-    SeleniumLibrary.Wait Until Element Is Visible  ${resultado_busca}
-    SeleniumLibrary.Click Element                  ${resultado_busca}
+Conferir mensagem "No results were found for your search "itemNãoExistente""
+    Wait Until Element Is Visible  ${resultado_busca}
+    
 

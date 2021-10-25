@@ -2,12 +2,11 @@
 Documentation   arquivo responsavel pelas importacoes
 Library         SeleniumLibrary
 
-
 ***Variables***
-${URL}                   http://automationpractice.com/
-${campo_busca}          //input[@id="search_query_top"]
-${produto}              //button[name="submit_search"]
-${resultado_busca}      //a[@class="product-name" and @title="blouse"]
+${URL}                   http://automationpractice.com
+${campo_busca}           //input[@id="search_query_top"]
+${botao_buscar}          //button[@name="submit_search"]
+${resultado_busca}      //a[@class="product-name" and @title="Blouse"]
 
 ***Keywords***
 Abrir o navegador
@@ -29,3 +28,4 @@ Clicar no botão pesquisar
 Conferir se o produto "Blouse" foi listado no site
     SeleniumLibrary.Wait Until Element Is Visible  ${resultado_busca}
     SeleniumLibrary.Click Element                  ${resultado_busca}
+

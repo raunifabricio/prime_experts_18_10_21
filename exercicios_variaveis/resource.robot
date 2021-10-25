@@ -3,7 +3,7 @@ Documentation   Importacao das bibliotecas para seu teste
 Library         Collections
 
 ***Variables***
-&{Pessoa}   nome='Rauni'   sobrenome='Fabricio'    idade='31'  sexo='Masculino'  cidade='Itu'   cep=13300000
+&{Pessoa}   nome='Rauni'   sobrenome='Fabricio'    idade='31'  cidade='Itu'   cep=13300000
 @{Lista_frutas}     mamao   banana  abacaxi  morango  laranja
 
 ***Keywords***

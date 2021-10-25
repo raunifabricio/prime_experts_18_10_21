@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.0 on win32)" generated="20211024 20:54:12.201" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests">
+<suite id="s1-s1" name="Exercicios Mobile" source="C:\Users\User\Desktop\Prime Control\Prime Hero Academy_Turma 2\Modulo_2\PRIMEEXPERTS_18_10_21\prime_experts_18_10_21\tests\exercicios_mobile.robot">
+<test id="s1-s1-t1" name="Caso de Teste 01: pesquisar canal &quot;Adrenaline&quot;">
+<kw name="Abrir o aplicativo no celular" library="resource">
+<msg timestamp="20211024 20:54:12.613" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${host}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<msg timestamp="20211024 20:54:12.614" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' ]</msg>
+<msg timestamp="20211024 20:54:14.643" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{}]}, "desiredCapabilities": {}}</msg>
+<msg timestamp="20211024 20:54:14.645" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20211024 20:54:14.659" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 500 179</msg>
+<msg timestamp="20211024 20:54:14.660" level="DEBUG">Finished Request</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 20:54:14.660" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20211024 20:54:14.668" level="FAIL">No application is open</msg>
+<msg timestamp="20211024 20:54:14.668" level="DEBUG">Traceback (most recent call last):
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20211024 20:54:14.660" endtime="20211024 20:54:14.668"/>
+</kw>
+<msg timestamp="20211024 20:54:14.670" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20211024 20:54:14.677" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: You must include a platformName capability
+</msg>
+<msg timestamp="20211024 20:54:14.677" level="DEBUG">Traceback (most recent call last):
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 52, in open_application
+    application = webdriver.Remote(str(remote_url), desired_caps)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\appium\webdriver\webdriver.py", line 268, in __init__
+    AppiumConnection(command_executor, keep_alive=keep_alive), desired_capabilities, browser_profile, proxy
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\appium\webdriver\webdriver.py", line 357, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)</msg>
+<status status="FAIL" starttime="20211024 20:54:12.614" endtime="20211024 20:54:14.677"/>
+</kw>
+<kw name="platformName=${platformName}">
+<status status="NOT RUN" starttime="20211024 20:54:14.680" endtime="20211024 20:54:14.680"/>
+</kw>
+<kw name="platformVersion=${platformVersion}">
+<status status="NOT RUN" starttime="20211024 20:54:14.682" endtime="20211024 20:54:14.682"/>
+</kw>
+<kw name="deviceName=${deviceName}">
+<status status="NOT RUN" starttime="20211024 20:54:14.685" endtime="20211024 20:54:14.685"/>
+</kw>
+<kw name="appPackage=${appPackage}">
+<status status="NOT RUN" starttime="20211024 20:54:14.687" endtime="20211024 20:54:14.687"/>
+</kw>
+<kw name="appActivity=${appActivity}">
+<status status="NOT RUN" starttime="20211024 20:54:14.690" endtime="20211024 20:54:14.691"/>
+</kw>
+<kw name="automationName=${automationName}">
+<status status="NOT RUN" starttime="20211024 20:54:14.693" endtime="20211024 20:54:14.693"/>
+</kw>
+<status status="FAIL" starttime="20211024 20:54:12.613" endtime="20211024 20:54:14.694"/>
+</kw>
+<kw name="Buscar o canal &quot;Adrenaline&quot;">
+<status status="NOT RUN" starttime="20211024 20:54:14.696" endtime="20211024 20:54:14.697"/>
+</kw>
+<kw name="Selecionar o canal na lista de busca" library="resource">
+<status status="NOT RUN" starttime="20211024 20:54:14.697" endtime="20211024 20:54:14.697"/>
+</kw>
+<kw name="Navegar pelo menu Playlist" library="resource">
+<status status="NOT RUN" starttime="20211024 20:54:14.698" endtime="20211024 20:54:14.698"/>
+</kw>
+<kw name="Selecionar a primeira playlist do canal" library="resource">
+<status status="NOT RUN" starttime="20211024 20:54:14.698" endtime="20211024 20:54:14.699"/>
+</kw>
+<kw name="Navegar por todos os botões da barra de Menu" library="resource">
+<status status="NOT RUN" starttime="20211024 20:54:14.699" endtime="20211024 20:54:14.699"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<msg timestamp="20211024 20:54:14.700" level="TRACE">Arguments: [  ]</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 20:54:14.700" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20211024 20:54:14.702" level="TRACE">Return: None</msg>
+<msg timestamp="20211024 20:54:14.703" level="FAIL">No application is open</msg>
+<msg timestamp="20211024 20:54:14.703" level="DEBUG">Traceback (most recent call last):
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20211024 20:54:14.700" endtime="20211024 20:54:14.703"/>
+</kw>
+<msg timestamp="20211024 20:54:14.705" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20211024 20:54:14.708" level="TRACE">Return: None</msg>
+<msg timestamp="20211024 20:54:14.709" level="FAIL">No application is open</msg>
+<msg timestamp="20211024 20:54:14.709" level="DEBUG">Traceback (most recent call last):
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 22, in close_application
+    self._debug('Closing application with session id %s' % self._current_application().session_id)
+  File "c:\users\user\appdata\local\programs\python\python37\lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 367, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20211024 20:54:14.700" endtime="20211024 20:54:14.709">No application is open</status>
+</kw>
+<tag>mobile_test</tag>
+<status status="FAIL" starttime="20211024 20:54:12.612" endtime="20211024 20:54:14.709">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: You must include a platformName capability
+
+
+Also teardown failed:
+No application is open</status>
+</test>
+<status status="FAIL" starttime="20211024 20:54:12.241" endtime="20211024 20:54:14.712"/>
+</suite>
+<status status="FAIL" starttime="20211024 20:54:12.205" endtime="20211024 20:54:14.714"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">mobile_test</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Exercicios Mobile">Tests.Exercicios Mobile</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211024 20:54:14.670" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20211024 20:54:14.705" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
