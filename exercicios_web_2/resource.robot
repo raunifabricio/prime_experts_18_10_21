@@ -6,7 +6,7 @@ Library         SeleniumLibrary
 ${URL}                   http://automationpractice.com
 ${campo_busca}           //input[@id="search_query_top"]
 ${botao_buscar}          //button[@name="submit_search"]
-${resultado_busca}       //a[@class="product-listing" and @title="No results were found for your search "itemNãoExistente""]
+${resultado_busca}       //a[@class="product-listing" and @title="No results were found for your search itemNãoExistente"]
 
 
 ***Keywords***
@@ -26,7 +26,7 @@ Digitar o nome do produto ${produto} no campo de pesquisa
 Clicar no botão pesquisar
     Click Button        ${botao_buscar}
 
-Conferir mensagem "No results were found for your search "itemNãoExistente""
+Conferir mensagem "No results were found for your search "itemNãoExistente"
     Wait Until Element Is Visible  ${resultado_busca}
     
 
